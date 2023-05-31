@@ -1,0 +1,108 @@
+.containerBox{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    width: 20vw;
+    height: 45vh;
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 24px;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+        font-family: 'Overpass', sans-serif;
+        img{
+            height: 25%;
+            width: auto;
+        }
+        .rating-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.7rem;
+            height: 1rem;
+            margin-top: 3rem;
+            width: auto;
+            border-radius: 1rem;
+            color: hsl(25, 97%, 53%);
+            background-color: hsl(210, 11%, 11%);
+            font-size: 1.2rem;
+            
+        }
+        h1{
+            color: white;
+        }
+        .text{
+            font-size: 15px;
+            color: hsl(216, 12%, 54%);
+            word-spacing: 3px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media (max-width: 1720px) {
+    .containerBox{
+        .container{
+            .rating-text{
+                font-size: .9rem;
+                margin-top: 2rem;
+            }
+            h1{
+                font-size: 1.6rem;
+            }
+            .text{
+                font-size: 14px;
+            }
+        }
+    }
+  }
+  @media (max-width: 1200px) {
+    .containerBox{
+        width: 30vw;
+        .container{
+            .rating-text{
+                font-size: .8rem;
+                margin-top: 1rem;
+            }
+            h1{
+                font-size: 1.4rem;
+            }
+            .text{
+                font-size: 12px;
+            }
+        }
+    }
+  }
+  @media (max-width: 800px) {
+    .containerBox{
+        width: 40vw;
+
+    }
+  }
+  @media (max-width: 600px) {
+    .containerBox{
+        width: 60vw;
+
+    }
+  }
+  @media (max-width: 400px) {
+    .containerBox{
+        width: 80vw;
+        height: 50vh;
+        .container{
+            .rating-text{
+                margin-top: .6rem;
+            }
+            .text{
+                word-spacing: 2px;
+                line-height: 20px;
+            }
+            
+        }
+    }
+  }
